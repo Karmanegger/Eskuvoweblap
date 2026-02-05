@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Anna & Kevin – Esküvői Meghívó</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --black: #0d0d0d;
+            --pink: #f2c6d4;
+            --silver: #cfcfcf;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: var(--black);
+            color: var(--silver);
+            font-family: "Georgia", serif;
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            animation: fadeIn 1.5s ease;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: var(--pink);
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: normal;
+            color: var(--silver);
+            margin-bottom: 40px;
+        }
+
+        section {
+            margin-bottom: 60px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 1s ease forwards;
+        }
+
+        section:nth-child(2) { animation-delay: 0.3s; }
+        section:nth-child(3) { animation-delay: 0.6s; }
+        section:nth-child(4) { animation-delay: 0.9s; }
+        section:nth-child(5) { animation-delay: 1.2s; }
+
+        .divider {
+            width: 120px;
+            height: 1px;
+            background: var(--pink);
+            margin: 30px auto;
+            opacity: 0.6;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .highlight {
+            color: var(--pink);
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            margin-top: 80px;
+            font-size: 0.9rem;
+            opacity: 0.6;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <section>
+        <p class="highlight">Szeretettel meghívunk Benneteket</p>
+        <h1>Anna & Kevin</h1>
+        <h2>esküvőjére</h2>
+        <p>
+            amely <span class="highlight">2026. június 27-én</span> kerül megrendezésre<br>
+            Alsóperén, a <span class="highlight">Park Szállóban</span>.
+        </p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+        <p>
+            A szertartás és a lagzi egyaránt a helyszínen lesz.<br>
+            A szertartás <span class="highlight">17:00 órakor</span> kezdődik,<br>
+            a kedves vendégeket <span class="highlight">16:00 órától</span> várjuk.
+        </p>
+        <p>
+            A vacsora szintén a Park Szállóban kerül felszolgálásra.
+        </p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+        <p>
+            A helyszínen ingyenes parkolás biztosított,<br>
+            valamint lehetőség van költségmentes ottalvásra a szállóban.
+        </p>
+        <p>
+            Az italokat a helyszín biztosítja,<br>
+            a tömény szeszesitalok kivételével.
+        </p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+        <h2>Helyszín és megközelítés</h2>
+        <p>
+            Az esküvő helyszíne az alsóperéi Park Szálló,<br>
+            amely Olaszfalu mellett, Várpalotától körülbelül 30 perc autóútra található.
+        </p>
+        <p>
+            A szálló az erdő közepén, egy varázslatos, nyugodt környezetben helyezkedik el.
+        </p>
+        <p>
+            A szertartás szabadtéren lesz.<br>
+            Rossz idő esetén beltéri helyszín is rendelkezésre áll.
+        </p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+        <h2>Programok menete</h2>
+        <ul>
+            <li>16:00 – Vendégvárás</li>
+            <li>17:00 – Esküvői szertartás</li>
+            <li>Szertartás után – Fényképezkedés</li>
+            <li>Ezt követően – Vacsora</li>
+            <li>Majd – Lagzi hajnalig 🎉</li>
+        </ul>
+
+        <p style="margin-top:20px;">
+            Fotózzatok nyugodtan, amit csak szeretnétek,<br>
+            de kérünk, osszátok is meg velünk később – nagyon örülünk majd nekik! 📸✨
+        </p>
+
+        <p style="margin-top:30px;">
+            Az este során játékokkal és kisebb programokkal is készülünk,<br>
+            melyek lebonyolításában ceremóniamesterünk,<br>
+            <span class="highlight">Valtner Miklós</span> lesz a segítségünkre.
+        </p>
+
+        <p style="margin-top:20px;">
+            Öltözzetek úgy, ahogyan nektek a legjobban esik –<br>
+            mi is kényelmesen, de ünneplősen leszünk. 😊
+        </p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+        <p>
+            Kérünk szépen, ha meg szeretnétek ajándékozni Bennünket ez alkalomból,<br>
+            az erre szánt összeget borítékban hozzátok magatokkal. Köszönjük szépen!🥰
+        </p>
+
+        <p>
+            Amennyiben élni szeretnétek az ottalvós lehetőséggel, vagy ha van ételérzékenységetek,<br>
+            kérünk, erről is tájékoztassatok a másik QR-kódon található esküvői regisztrációs oldalon.
+        </p>
+
+        <p>
+            Szeretettel várjuk a kicsiket is – lesz nekik játszó sarok és sok szeretet! 🧸
+        </p>
+    </section>
+
+    <footer>
+        Szeretettel várunk Benneteket ❤️
+    </footer>
+
+</div>
+
+</body>
+</html>
